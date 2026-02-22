@@ -1,0 +1,2 @@
+ErrorDocument 404 /404.html
+date_default_timezone_set('Africa/Cairo');

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Voucher</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Tahoma, sans-serif;
+      font-size: 11px;
+      background: #fff;
+      color: #000;
+      width: 794px;
+      margin: auto;
+    }
+    .voucher {
+      padding: 20px 30px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .header-left {
+      font-weight: bold;
+    }
+    .header-right {
+      text-align: right;
+      font-size: 12px;
+    }
+    .voucher-title {
+      text-align: center;
+      background: #f4a300;
+      color: white;
+      padding: 6px 0;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .section-title {
+      background-color: #0074c7;
+      color: white;
+      padding: 4px 8px;
+      font-weight: bold;
+      margin: 20px 0 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+    td {
+      padding: 6px 4px;
+      vertical-align: top;
+    }
+    .box {
+      border: 1px solid #000;
+      padding: 8px;
+      min-height: 60px;
+    }
+    .yellow-box, .green-box {
+      background: #f4a300;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      padding: 6px;
+    }
+    .footer {
+      background: #0074c7;
+      color: white;
+      text-align: center;
+      font-size: 12px;
+      padding: 8px;
+      margin-top: 20px;
+    }
+    [contenteditable] {
+      outline: 1px dashed #ccc;
+      min-width: 50px;
+    }
+    button {
+      display: block;
+      margin: 30px auto;
+      padding: 10px 30px;
+      font-size: 16px;
+      background: #0074c7;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<div class="voucher" id="voucher">
+  <div class="header">
+    <div class="header-left">
+      Date: <span contenteditable="true">24-Jul-2025</span>
+    </div>
+    <div class="header-right">
+      <strong>SUPPORT</strong><br>
+      La vida Travel<br>
+      Salmyia - plaza<br>
+      Tel. 98053220<br>
+      Email: Paulo@lavida-travel.com
+    </div>
+  </div>
+
+  <div class="voucher-title">VOUCHER</div>
+
+  <div class="section-title">Booking Details</div>
+  <table>
+    <tr>
+      <td><strong>Booking Ref. No.</strong></td>
+      <td contenteditable="true">1380690H20250724</td>
+      <td><strong>Nights</strong></td>
+      <td contenteditable="true">3</td>
+    </tr>
+    <tr>
+      <td colspan="2" class="yellow-box">Check In: <span contenteditable="true">05-Aug-2025</span></td>
+      <td colspan="2" class="yellow-box">Check Out: <span contenteditable="true">08-Aug-2025</span></td>
+    </tr>
+    <tr>
+      <td colspan="4"><strong>Passengers:</strong> <span contenteditable="true">4 (4 adults)</span></td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <div class="box" contenteditable="true">
+          Room 1 - Mr.ALI ALAZMI (Holder), Mr.ALI a ALAZMI<br>
+          Room 2 - Mr.ALI s ALAZMI, Mr.ALI d ALAZMI
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Name</strong></td>
+      <td contenteditable="true">Novotel Muenchen Messe</td>
+      <td><strong>Address</strong></td>
+      <td contenteditable="true">Willy-Brandt-Platz 1,81829</td>
+    </tr>
+    <tr>
+      <td><strong>City</strong></td>
+      <td contenteditable="true">Neue Messe</td>
+      <td><strong>Country</strong></td>
+      <td contenteditable="true">Germany</td>
+    </tr>
+    <tr>
+      <td colspan="4"><strong>RoomType / Board</strong></td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <div class="box" contenteditable="true">
+          Standard Room with twin beds (Non-refundable rate), Standard Room with twin beds (Non-refundable rate) - ROOM ONLY
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>No. of room (s)</strong></td>
+      <td colspan="3" contenteditable="true">2 (4 adults)</td>
+    </tr>
+  </table>
+
+  <div class="section-title">Booking Notes</div>
+  <div class="box" contenteditable="true">
+    Booking payable as per reservation details. Please collect all extras directly from clients prior to departure...
+  </div>
+
+  <div class="section-title">Special Offer</div>
+  <div class="box" contenteditable="true">
+    Check-in hour 15:00. Car park YES (With additional debit notes)...
+  </div>
+
+  <div class="section-title">Hotel Facilities</div>
+  <div class="box" contenteditable="true">
+    [Insert facilities list...]
+  </div>
+
+  <div class="section-title">Nationality & Domicile</div>
+  <div class="box" contenteditable="true">
+    [Insert policy text...]
+  </div>
+
+  <div class="section-title">Check-in/Check-out Timings & Policies</div>
+  <div class="box" contenteditable="true">
+    The usual check-in time is 2:00 PM hours...
+  </div>
+
+  <div class="footer">
+    Check your booking details carefully and inform us immediately, if you have any queries.
+  </div>
+</div>
+
+<button onclick="generatePDF()">توليد PDF مطابق</button>
+
+<script>
+  function generatePDF() {
+    const element = document.getElementById('voucher');
+    const opt = {
+      margin: 0,
+      filename: 'hotel_voucher.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: 'px', format: 'a4', orientation: 'portrait' }
+    };
+    html2pdf().set(opt).from(element).save();
+  }
+</script>
+</body>
+</html>
